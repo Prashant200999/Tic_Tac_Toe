@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+main{
+    background-color: #E3D8F1;
+    text-align: center;
+    min-height: 100vh;
+}
+h1{
+    
+    font-size: 7vmin;
+}
+
+.container{
+    margin: 10%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #AD8A64;
+    border-radius: 50px;
+    margin-bottom: 4%;
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+   border: none;
+    border-radius: 1rem;
+    font-size: 8vmin;
+    background-color: #BF8B85;
+    color: black;
+    transition: all 0.5s;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.4);
+    
+}
+
+.box:hover{
+    background-color:#936762 ;
+    cursor: grab;
+    height: 20vmin;
+    width: 20vmin;
+    rotate: z 180deg;
+ 
+}
+
+#reset-btn {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    background-color: #DABECA;
+    color: black;
+    border-radius: 1rem;
+    border: none;
+    transition: all 0.3s;
+  
+  }
+  #reset-btn:hover{
+    background-color: #BF8B85;
+    cursor: grab;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.4);
+    padding: 2rem;
+    font-size: 1.8rem;
+    
+  }  
+  .hide {
+    display: none;
+  }
+
+@media screen and (max-width:768px){
+    .container{
+        margin: 5%;
+    }
+    .game{
+        height: 50vmin;
+        width: 50vmin;
+    }
+    .box{
+        height: 15vmin;
+        width: 15vmin;
+        font-size: 6vmin;
+    }
+    #reset-btn{
+        font-size: 1rem;
+        padding: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+    .container{
+        margin: 2%;
+    }
+    .game{
+        height: 40vmin;
+        width: 40vmin;
+    }
+    .box{
+        height: 12vmin;
+        width: 12vmin;
+        font-size: 5vmin;
+    }
+    #reset-btn{
+        font-size: 0.8rem;
+        padding: 0.8rem;
+    }
+}
