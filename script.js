@@ -46,7 +46,7 @@ boxes.forEach((box) =>{
 });
 
 const gameDraw = () => {
-    alert("The Game id Draw.");
+    alert("The Game is Draw!!");
      resetGame();
  
   };
