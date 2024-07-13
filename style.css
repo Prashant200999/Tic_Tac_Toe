@@ -49,8 +49,6 @@ h1{
 .box:hover{
     background-color:#936762 ;
     cursor: grab;
-    height: 20vmin;
-    width: 20vmin;
     rotate: z 180deg;
  
 }
@@ -69,8 +67,8 @@ h1{
     background-color: #BF8B85;
     cursor: grab;
     box-shadow: 0 0 1rem rgba(0,0,0,0.4);
-    padding: 2rem;
-    font-size: 1.8rem;
+    padding: 1.2rem;
+    font-size: 1.2rem;
     
   }  
   .hide {
@@ -82,8 +80,8 @@ h1{
         margin: 5%;
     }
     .game{
-        height: 50vmin;
-        width: 50vmin;
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        gap: 5px;
     }
     .box{
         height: 15vmin;
@@ -102,8 +100,8 @@ h1{
         margin: 2%;
     }
     .game{
-        height: 40vmin;
-        width: 40vmin;
+        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+        gap: 3px;
     }
     .box{
         height: 12vmin;
