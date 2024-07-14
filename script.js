@@ -1,5 +1,6 @@
 let boxes = document.querySelectorAll(".box");
 let resetBtn = document.querySelector("#reset-btn");
+let turn = document.querySelector("#turn");
 
 let turnOfX = true;
 let count = 0;
@@ -28,9 +29,11 @@ boxes.forEach((box) =>{
     box.addEventListener("click",()=>{
         if(turnOfX){
         box.innerText = "X";
+            turn.innerHTML="'O's turn"
         turnOfX = false;
     }else{
         box.innerText = "O"
+             turn.innerHTML="'X's turn"
         turnOfX = true;
     }
     box.disabled = true;
