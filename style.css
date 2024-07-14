@@ -13,6 +13,9 @@ h1{
     
     font-size: 7vmin;
 }
+#turn{
+    font-size: 5vmin;
+}
 
 .container{
     margin: 10%;
